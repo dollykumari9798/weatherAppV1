@@ -1,0 +1,95 @@
+/* Set a radial gradient background */
+body {
+
+  /* background: url("img\background.avif"); */
+  /* background: radial-gradient(circle, #8dd6d6, #add8e6); /* light teal and light blue */
+  
+   animation: gradient 10s ease-in-out infinite alternate;  
+}
+
+/* Animate the background gradient */
+@keyframes gradient {
+  60% {
+    background-color: #3f7181; /* light blue */
+  }
+  30% {
+    background-color: #25d6d6; /* light teal */
+  }
+  30% {
+    background-color: #458cf7; /* light blue */
+  }
+}
+
+/* Center align all elements */
+h1, table {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Center align the input field and Refresh button */
+input[type="text"], button {
+  display: block;
+  margin: 20px auto;
+}
+
+/* Style the table */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2), 0 0 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+/* Add a glow effect on the table border */
+table tr:first-child th {
+  background-color: #004080; /* navy blue */
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Style the table data cells */
+td, th {
+  margin-top: 50%;
+  padding: 15px;
+  border: 1px solid #fff;
+}
+
+/* Style the table data cells on hover */
+td:hover {
+  background-color: #eade5b; /* yellow */
+}
+
+/* Style the input field */
+input[type="text"] {
+  padding: 12px;
+  border: none;
+  margin-top: 50px;
+  border-radius: 25px;
+  box-shadow: 0 2px 2px rgba(40, 11, 89, 0.5);
+  background-color: #cae3f8; /* light blue */
+  color: #333;
+}
+
+/* Style the Refresh button */
+button {
+  padding: 12px 40px;
+  background-color: #001f3f; /* navy blue */
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 40px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Style the Refresh button on hover */
+button:hover {
+  background-color: #004080; /* darker navy blue */
+}
+
+/* Add a simple animation when the Refresh button is clicked */
+button:active {
+  transform: scale(0.95);
+}
